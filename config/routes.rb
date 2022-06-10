@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :students
   root 'pages#index'
   get 'pages/index'
   devise_for :users
