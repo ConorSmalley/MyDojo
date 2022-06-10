@@ -25,7 +25,7 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <% if user_signed_in? %>
-              Logged in as <strong><%= current_user.email %></strong>.
+              Logged in as&nbsp;<strong><%= current_user.email %></strong>&nbsp;
               <%= link_to 'Edit profile', edit_user_registration_path, :class => 'btn btn-sm btn-primary' %> &nbsp;
               <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'btn btn-sm btn-primary'  %>
             <% else %>
@@ -47,7 +47,7 @@
     </div>
     <footer>
       <div class="container">
-        Rails Girls <%= Time.now.year %>
+        Smalley Ventures <%= Time.now.year %>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
