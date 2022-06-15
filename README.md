@@ -27,3 +27,5 @@ Things you may want to cover:
 ## Commands Ran
 
 rails new MyDojo - Created initial Rails project
+
+{/* <script>data-turbolinks-eval=false</script> */}

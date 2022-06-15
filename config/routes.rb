@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :emergency_contacts
   resources :students
   root 'pages#index'
   get 'pages/index'

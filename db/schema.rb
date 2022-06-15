@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_10_093437) do
+ActiveRecord::Schema.define(version: 2022_06_15_082105) do
+
+  create_table "emergency_contacts", force: :cascade do |t|
+    t.string "name"
+    t.string "relationship"
+    t.string "number"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "student_id"
+  end
 
   create_table "students", force: :cascade do |t|
     t.string "first_name"
