@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Style Grades</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nice Name</th>
+      <th>Style</th>
+      <th>Grade</th>
+      <th>Previous grade</th>
+      <th>Next grade</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @style_grades.each do |style_grade| %>
+      <tr>
+        <td><%= Style.find(style_grade.style_id).name %></td>
+        <td><%= Style.find(style_grade.style_id).name %></td>
+        <td><%= Grade.find(style_grade.grade_id).name %></td>
+        <td><%= StyleGrade.find(style_grade.previous_grade).nicename %></td>
+        <td><%= StyleGrade.find(style_grade.next_grade).nicename %></td>
+        <td><%= link_to 'Show', style_grade %></td>
+        <td><%= link_to 'Edit', edit_style_grade_path(style_grade) %></td>
+        <td><%= link_to 'Destroy', style_grade, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Style Grade', new_style_grade_path %>

@@ -1,5 +1,3 @@
-//= require jquery
-//= require jquery_ujs
 // import 'bootstrap/js/src/alert'  
 // import 'bootstrap/js/src/button'  
 // import 'bootstrap/js/src/carousel'  

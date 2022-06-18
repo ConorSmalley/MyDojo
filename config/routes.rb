@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :style_grades
+  resources :grades
+  resources :styles
   resources :emergency_contacts
   resources :students
   root 'pages#index'

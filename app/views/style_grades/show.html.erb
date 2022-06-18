@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Style:</strong>
+  <%= @style_grade.style_id %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @style_grade.grade_id %>
+</p>
+
+<p>
+  <strong>Next grade:</strong>
+  <%= @style_grade.next_grade %>
+</p>
+
+<p>
+  <strong>Previous grade:</strong>
+  <%= @style_grade.previous_grade %>
+</p>
+
+<%= link_to 'Edit', edit_style_grade_path(@style_grade) %> |
+<%= link_to 'Back', style_grades_path %>
